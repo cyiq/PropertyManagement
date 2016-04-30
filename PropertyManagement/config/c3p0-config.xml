@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!-- 配置默认的 -->
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">cyiq</property>
+		<property name="jdbcUrl"><![CDATA[jdbc:mysql://localhost:3306/property?useUnicode=true&characterEncoding=utf8]]></property>
+		<property name="checkoutTimeout">5000</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">5</property>
+		<property name="maxPoolSize">8</property>
+		<property name="minPoolSize">4</property>
+	</default-config>
+
+</c3p0-config>

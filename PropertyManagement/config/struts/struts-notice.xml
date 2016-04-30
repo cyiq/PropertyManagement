@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="notice" namespace="/notice" extends="struts-default">
+		<action name="noticeAction_*" class="cyiq.action.NoticeAction" method="{1}">
+			<result name="tobackgroup">/login/backgroup.jsp</result>
+			<result name="home">/login/home.jsp</result>
+			<result name="action2action" type="redirectAction">noticeAction_findAll.do</result>
+			<result name="editUI">/login/backgroup_edit.jsp</result>
+			<result name="delete">/login/backgroup.jsp</result>
+		</action>
+	</package>
+</struts>

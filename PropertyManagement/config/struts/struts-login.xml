@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="login" namespace="/login" extends="struts-default">
+		<action name="LoginAction_*" class="cyiq.action.LoginAction" method="{1}">
+			<result name="home">/login/home.jsp</result>
+			<result name="input">/login/login.jsp</result>
+		</action>
+		<action name="StuLoginAction_*" class="cyiq.action.StuLoginAction" method="{1}">
+			<result name="home">/login/home.jsp</result>
+			<result name="input">/login/login.jsp</result>
+		</action>
+	</package>
+</struts>

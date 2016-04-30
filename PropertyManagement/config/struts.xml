@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.action.extension" value="action,do,,"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.multipart.maxSize" value="20971520"></constant>
+	<constant name="struts.custom.i18n.resources" 
+		value="cyiq.action.token"></constant>
+	
+	<include file="struts/struts-login.xml"></include>
+	<include file="struts/struts-employee.xml"></include>
+	<include file="struts/struts-student.xml"></include>
+	<include file="struts/struts-publicDevice.xml"></include>
+	<include file="struts/struts-notice.xml"></include>
+	<include file="struts/struts-message.xml"></include>
+	<include file="struts/struts-charge.xml"></include>
+	
+	<include file="struts/struts-apply.xml"></include>
+</struts>

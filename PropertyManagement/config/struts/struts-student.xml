@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="student" namespace="/student" extends="struts-default">
+		<interceptors>
+			<interceptor-stack name="newStack">
+				<interceptor-ref name="defaultStack"/>
+				<interceptor-ref name="token">
+					<param name="includeMethods">save</param>
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<action name="StudentAction_*" class="cyiq.action.StudentAction" method="{1}">
+			<result name="add">/student/add.jsp</result>
+			<result name="list">/student/list.jsp</result>
+			<result name="tolist" type="redirectAction">StudentAction_list</result>
+			<result name="input">/student/error.jsp</result>
+			<result name="edit">/student/edit.jsp</result>
+			<result name="invalid.tocken">/student/error.jsp</result>
+		</action>
+	</package>
+</struts>
